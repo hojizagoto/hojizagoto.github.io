@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <center>
 <script>
 
@@ -43,8 +42,31 @@ function waktu() {
 		<li><a href="minggu2.html">Minggu 2</a></li>
 		<li><a href="minggu3.html">Minggu 3</a></li>
 	</ul>
-
-
+	&nbsp;<br><br><br>
+	 <SCRIPT>
+		function warna(pilihan) {
+			alert("Anda telah menekan tombol warna: " + pilihan + "")
+			document.body.style.background=pilihan;
+		}
+	</SCRIPT>
+	<h1>Pilih warna favorit Anda.</h1>
+	<FORM>
+		<INPUT TYPE="button" VALUE="Navy" onClick="warna('Navy')" style="background-color: Navy;">
+		<INPUT TYPE="button" VALUE="Fuchsia" onClick="warna('Fuchsia')" style="background-color: Fuchsia;">
+		<INPUT TYPE="button" VALUE="Olive" onClick="warna('Olive')" style="background-color: Olive;">
+		<INPUT TYPE="button" VALUE="Silver" onClick="warna('Silver')" style="background-color: Silver;">
+		<INPUT TYPE="button" VALUE="Cyan" onClick="warna('Cyan')" style="background-color: Cyan;">
+		<INPUT TYPE="button" VALUE="Putih" onClick="warna('White')" style="background-color: White;">
+	</FORM>
+	<SCRIPT>
+	function dontClick(){
+		alert("I told you not to click !");
+	}
+	</SCRIPT>
+	<H1>Tombol dengan Javascript</H1>
+		<FORM>
+			<INPUT TYPE="BUTTON"  VALUE="Jangan klik" onClick="alert('Jangan klik!!!'); return value">
+		</FORM>
 </center>
 </body>
 </html>
